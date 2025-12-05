@@ -163,8 +163,8 @@ output = terminal_output.getvalue()
 
 # ----------------- Send to Discord Webhook -----------------
 def send_to_webhook(text):
-    webhook_url = "https://discord.com/api/webhooks/1445819988295422153/MP-_Hke1gAFKtFkcsy7KZ3opAEjAGfbTmt2jNM8jt2_sBbvLoZ6oPRWolGythstXirZV"  # ← ضع الويب هوك هنا
-
+    webhook_url = "Your_webhook_here"  # put your webhook here
+    
     payload = {
         "content": f"```json\n{text}\n```"
     }
@@ -180,4 +180,5 @@ send_to_webhook(output)
 
 # ----------------- __main__ Block -----------------
 if __name__ == "__main__":
+
     pass  # nothing needed
